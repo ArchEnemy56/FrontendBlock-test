@@ -1,7 +1,7 @@
 body {
     font-size: 14px;
-    font-weight: 400;
     line-height: 1.5;
+    font-weight: 400;
 }
 
 a {
@@ -23,10 +23,17 @@ h1 + section {
     padding: 0 20px 0 20px;
 }
 
+.results {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 10px;
+}
+
 section {
     background-color: lavender;
     padding: 5px 20px;
     margin-bottom: 20px;
+    gap: 10px;
 }
 
 .header {
@@ -47,11 +54,11 @@ section {
             display: flex;
             list-style-type: none;
             padding-left: 0;
-            margin: 0;
+            gap: 30px;
         }
-        ul > li:not(:last-child) {
+        /*ul > li:not(:last-child) {
             margin-right: 30px;
-        }
+        }*/
         .box {
             display: flex;
             margin-bottom: 30px;
@@ -67,7 +74,9 @@ section {
         }
 
         .link {
+            display: block;
             background-color: rebeccapurple;
             color: white;
             padding: 8px 15px;
+            text-align: center;
         }
